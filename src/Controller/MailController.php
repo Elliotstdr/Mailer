@@ -26,7 +26,7 @@ class MailController extends AbstractController
 
     // Envoyer l'e-mail
     $email = (new Email())
-      ->from('no-reply@online-resume.fr')
+      ->from('no-reply@elliotstdr.fr')
       ->to($_ENV['EMAIL'])
       ->subject('Nouveau message de contact')
       ->html("$name <br> Titre : $title <br> Message : $message");
